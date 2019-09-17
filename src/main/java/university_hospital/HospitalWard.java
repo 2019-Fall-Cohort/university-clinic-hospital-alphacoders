@@ -31,8 +31,8 @@ public class HospitalWard {
 			arrayRow = (String.format("|%-10s",  patient.getName())) +
 				(String.format("|%-10d",  patient.getBloodLevel())) +
 				(String.format("|%-10d",  patient.getHealthLevel()));
+			System.out.println(arrayRow);
 		}
-		System.out.println(arrayRow);
 		return allPatientAttributes;
 		}
 		
