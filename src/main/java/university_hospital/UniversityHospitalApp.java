@@ -62,7 +62,6 @@ public class UniversityHospitalApp {
 		System.out.print(String.format("|%-10s",  "Name"));
 		System.out.print(String.format("|%-10s",  "BloodLevel"));
 		System.out.print(String.format("|%-10s",  "HealthLevel"));
-		String[] retrievedAttributes = hospitalWard.retrieveAllPatientAttributes();
 	}
 	public static String getName() {
 		return name;

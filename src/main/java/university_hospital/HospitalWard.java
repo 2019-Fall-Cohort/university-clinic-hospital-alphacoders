@@ -28,6 +28,7 @@ public class HospitalWard {
 		String arrayRow = "";
 		
 		for (Patient patient:  patientList.values()) {
+			System.out.println("");
 			arrayRow = (String.format("|%-10s",  patient.getName())) +
 				(String.format("|%-10d",  patient.getBloodLevel())) +
 				(String.format("|%-10d",  patient.getHealthLevel()));
