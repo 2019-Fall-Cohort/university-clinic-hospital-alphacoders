@@ -30,3 +30,4 @@ public class JanitorTest {
 		Janitor underTest = new Janitor ("Test Janitor");
 		boolean result = underTest.getJanitorPaid (false);
 }
+}
