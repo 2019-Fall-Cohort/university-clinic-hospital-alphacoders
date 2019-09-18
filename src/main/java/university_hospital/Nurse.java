@@ -6,5 +6,14 @@ public class Nurse extends Employee {
 		super(name);
 		
 	}
+	 public int getNurseIdentificationNumer() {
+	        return 888;
+	    }
+	    public int getNurseSalary() {
+	        return 50000;
+	    }
+	    public boolean getNursePaid(boolean b) {
+	        return false;
 
+}
 }

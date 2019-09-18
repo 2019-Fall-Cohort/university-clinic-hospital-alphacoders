@@ -7,4 +7,16 @@ public class Janitor extends Employee {
 		
 	}
 
+	public int getJanitorSalary() {
+		return 40000;
+	}
+
+	public int getJanitorIdentificationNumer() {
+		return 666;
+	}
+
+	public boolean getJanitorPaid(boolean ifPaid) {
+		return false;
+	}
+
 }
