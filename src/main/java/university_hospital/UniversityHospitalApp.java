@@ -26,7 +26,7 @@ public class UniversityHospitalApp {
 		System.out.println("Please choose an option");
 		System.out.println("1. Add a patient to the hospital.");
 		System.out.println("2. Display all patients and there health.");
-		System.out.println("3. Type to close application");
+		System.out.println("4. Type to close application");
 	}
 	
 	private static void addANewPatient () {
@@ -51,7 +51,10 @@ public class UniversityHospitalApp {
 			displayAllPatientAttributes();
 			hospitalWard.retrieveAllPatientAttributes();
 			break;
+			
 		case 3:
+			
+		case 4:
 			stayInMenu = false;
 			System.out.println("Goodbye.");
 			System.exit(0);

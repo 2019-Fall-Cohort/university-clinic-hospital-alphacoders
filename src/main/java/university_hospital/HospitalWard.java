@@ -3,7 +3,7 @@ package university_hospital;
 import java.util.Collection;
 import java.util.HashMap;
 
-public class HospitalWard {
+public class HospitalWard  {
 
 	HashMap<String, Patient> patientList;
 
@@ -36,6 +36,7 @@ public class HospitalWard {
 		}
 		return allPatientAttributes;
 		}
+	
 		
 	}
 
