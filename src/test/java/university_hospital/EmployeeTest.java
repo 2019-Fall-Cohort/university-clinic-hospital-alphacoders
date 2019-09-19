@@ -28,12 +28,8 @@ public class EmployeeTest {
 		Employee underTest = new Employee("Test Person");
 		int result = underTest.getIdentificationNumber();
 	}
-	@Test
-	public void shouldCheckIfPaid() {
-		Employee underTest = new Employee("Test Person");
-		boolean result = underTest.getPaid (false);
 		
-	}
+	
 	@Test
 	public void shouldHaveEmployeeList() {
 		Employee underTest = new Employee("Test Person");

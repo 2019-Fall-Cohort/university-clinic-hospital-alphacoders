@@ -26,9 +26,5 @@ public class ReceptionistTest {
 		int result = underTest.getReceptionistIdentificationNumer(); 
 			assertThat(result, is(777));
 		}
-	@Test
-	public void shouldCheckIfReceptionistWasPaid () {
-		Receptionist underTest = new Receptionist ("Test Receptionist");
-		boolean result = underTest.getReceptionistPaid (false);
-}
+
 }

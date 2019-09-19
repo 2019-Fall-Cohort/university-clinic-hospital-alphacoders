@@ -25,9 +25,5 @@ public class JanitorTest {
 		int result = underTest.getJanitorIdentificationNumer(); 
 			assertThat(result, is(666));
 		}
-	@Test
-	public void shouldCheckIfJanitorWasPaid () {
-		Janitor underTest = new Janitor ("Test Janitor");
-		boolean result = underTest.getJanitorPaid (false);
-}
+
 }
