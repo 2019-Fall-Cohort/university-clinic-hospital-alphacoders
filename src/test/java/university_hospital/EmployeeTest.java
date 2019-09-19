@@ -34,7 +34,11 @@ public class EmployeeTest {
 		boolean result = underTest.getPaid (false);
 		
 	}
-	
+	@Test
+	public void shouldHaveEmployeeList() {
+		Employee underTest = new Employee("Test Person");
+		
+	}
 	
 		
 		

@@ -25,16 +25,13 @@ public class DoctorTest {
 	@Test
 	public void doctorShouldHaveIdentificationNumber() {
 		Doctor underTest = new Doctor ("Test Doctor");
-		int result = underTest.getDoctorIdentificationNumer(); 
+		int result = underTest.getDoctorIdentificationNumber(); 
 			assertThat(result, is(999));
 		}
-	@Test
-	public void shouldCheckIfDoctorWasPaid () {
-		Doctor underTest = new Doctor ("Test Doctor");
-		boolean result = underTest.getDoctorPaid (false);
+
 		
 	}
-	}
+	
 
 	
 

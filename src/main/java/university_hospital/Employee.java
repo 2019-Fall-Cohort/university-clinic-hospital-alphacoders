@@ -13,7 +13,6 @@ public class Employee {
 	}
 	public String getName() {
 		return name;
-
 	}
 	public int getSalary() {
 		return 0;
@@ -21,10 +20,13 @@ public class Employee {
 	public int getIdentificationNumber() {
 		return 0;
 	}
-	public boolean getPaid(boolean paid) {
+	public boolean getPaid() {
 		return true;
 	}
 
+	}
+	
 
-}
+
+
 

@@ -2,22 +2,30 @@ package university_hospital;
 
 public class Doctor extends Employee {
 	
+
+	private int salary;
+	private int identificationNumber;
 	
 	public Doctor(String name) {
 		super(name);
-
+		setDoctorSalary(90000);
+		setDoctorIdentificationNumber(999);
+		
 	}
 
+
+	
+	public int getDoctorIdentificationNumber() {
+		return identificationNumber;
+	}
+	public void setDoctorIdentificationNumber(int identificationNumber) {
+		this.identificationNumber = identificationNumber;
+	}
 	public int getDoctorSalary() {
-		return 90000;
+		return salary;
 	}
-
-	public int getDoctorIdentificationNumer() {
-		return 999;
-	}
-
-	public boolean getDoctorPaid(boolean paidDoctor) {
-		return false;
+	public void setDoctorSalary(int salary) {
+		this.salary = salary;
 	}
 
 	}
