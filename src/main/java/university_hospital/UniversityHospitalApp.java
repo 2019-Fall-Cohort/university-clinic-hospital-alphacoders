@@ -15,8 +15,10 @@ public class UniversityHospitalApp {
 	private static Scanner userInput = new Scanner(System.in);
 	private static String name;
 	static boolean stayInMenu = true;
+	
 
 	public static void main(String[] args) {
+		
 
 		hospitalWard.addEmployeeToHospitalWard(doctor);
 		hospitalWard.addEmployeeToHospitalWard(janitor);
@@ -135,6 +137,10 @@ public class UniversityHospitalApp {
 		userInput.nextLine();
 		patient.displayPatientAttributes();
 		System.out.println();
+		int amount = 8;
+		patient.giveBlood(amount);
+		patient.displayPatientAttributes();
+		
 	
 		
 	}

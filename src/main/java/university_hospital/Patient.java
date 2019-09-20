@@ -7,6 +7,8 @@ import java.util.Map;
 public class Patient {
 	
 	private String name;
+	int minValue = 0;
+	int maxValue = 100;
 	private int BloodLevel = 20;
 	private int HealthLevel = 10;
 	
@@ -36,6 +38,39 @@ public class Patient {
 		System.out.print(String.format("|%-10s",  "BloodLevel" + BloodLevel));
 		System.out.print(String.format("|%-10s",  "HealthLevel" + HealthLevel));
 		System.out.println("");
+	}
+
+	public void giveBlood(int amount) {
+		int newBloodLevel = BloodLevel - amount;
+		
+		if (attributeWithinRange(newBloodLevel)) {
+			setBloodLevel(newBloodLevel);
+		} else {
+			setBloodLevel(minValue);
+		}
+		
+		
+		
+		
+	}
+	private void setBloodLevel(int BloodLevel) {
+		this.BloodLevel = BloodLevel;
+		
+	}
+
+	public boolean attributeWithinRange(int attribute) {
+
+		boolean isWithinRange = true;
+
+		if (attribute < minValue) {
+			isWithinRange = false;
+		}
+
+		if (attribute > maxValue) {
+			isWithinRange = false;
+		}
+
+		return isWithinRange;
 	}
 		
 	}
