@@ -72,6 +72,23 @@ public class Patient {
 
 		return isWithinRange;
 	}
+
+	public void treatHealth(int amountHealth) {
+		int newHealthLevel = HealthLevel + amountHealth;
+		
+		if (attributeWithinRange(newHealthLevel)) {
+			setHealthLevel(newHealthLevel);
+		} else {
+			setHealthLevel(maxValue);
+			
+		}
+		
+	}
+
+	private void setHealthLevel(int HealthLevel) {
+		this.HealthLevel = HealthLevel;
+		
+	}
 		
 	}
 	

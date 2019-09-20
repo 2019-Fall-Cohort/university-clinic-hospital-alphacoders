@@ -28,6 +28,13 @@ public class PatientTest {
 		assertEquals(expected, 12);
 		
 	}
+	@Test
+	public void patientIncreasedHealth() {
+		Patient underTest = new Patient ("Bob");
+		underTest.treatHealth(7);
+		int expected = underTest.getHealthLevel();
+		assertEquals(expected, 17);
+	}
 	
 	
 	}
