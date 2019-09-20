@@ -137,8 +137,8 @@ public class UniversityHospitalApp {
 		userInput.nextLine();
 		patient.displayPatientAttributes();
 		System.out.println();
-		int amount = 8;
-		patient.giveBlood(amount);
+		int amountBlood = 5;
+		patient.giveBlood(amountBlood);
 		patient.displayPatientAttributes();
 		
 	

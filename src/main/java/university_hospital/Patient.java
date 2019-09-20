@@ -40,8 +40,8 @@ public class Patient {
 		System.out.println("");
 	}
 
-	public void giveBlood(int amount) {
-		int newBloodLevel = BloodLevel - amount;
+	public void giveBlood(int amountBlood) {
+		int newBloodLevel = BloodLevel - amountBlood;
 		
 		if (attributeWithinRange(newBloodLevel)) {
 			setBloodLevel(newBloodLevel);
