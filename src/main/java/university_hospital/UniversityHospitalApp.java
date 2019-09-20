@@ -2,6 +2,8 @@ package university_hospital;
 
 import java.util.Scanner;
 
+
+
 public class UniversityHospitalApp {
 	
 	static HospitalWard hospitalWard = new HospitalWard();
@@ -9,6 +11,7 @@ public class UniversityHospitalApp {
 	static Janitor janitor = new Janitor("Fred");
 	static Nurse nurse = new Nurse("Jackie");
 	static Receptionist receptionist = new Receptionist("Stacy");
+	static Patient patient = new Patient("");
 	private static Scanner userInput = new Scanner(System.in);
 	private static String name;
 	static boolean stayInMenu = true;
@@ -35,7 +38,8 @@ public class UniversityHospitalApp {
 		System.out.println("1. Add a patient to the hospital.");
 		System.out.println("2. Display all patients and there health.");
 		System.out.println("3. Display all employee stats.");
-		System.out.println("4. Type to close application");
+		System.out.println("4. Have Doctor treat patient.");
+		System.out.println("5. Type to close application");
 	}
 	
 	private static void addANewPatient () {
@@ -65,6 +69,10 @@ public class UniversityHospitalApp {
 			displayEmployeeAttributes();
 			break;
 		case 4:
+			interactWithOnePatient();
+			break;
+			
+		case 5:
 			stayInMenu = false;
 			System.out.println("Goodbye.");
 			System.exit(0);
@@ -118,6 +126,17 @@ public class UniversityHospitalApp {
 		System.out.println();
 		hospitalWard.retrieveReceptionistAttributes();
 		System.out.println();
+	}
+	private static void interactWithOnePatient() {
+		System.out.println("Which patient would you like the Doctor to treat?");
+		System.out.println(hospitalWard.retrievePatientList());
+		String patientName = userInput.nextLine();
+		Patient selectedPatient = hospitalWard.retrievePatient(patientName);
+		userInput.nextLine();
+		patient.displayPatientAttributes();
+		System.out.println();
+	
+		
 	}
 	
 	}

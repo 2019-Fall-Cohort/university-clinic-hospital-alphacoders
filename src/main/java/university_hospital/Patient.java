@@ -33,14 +33,16 @@ public class Patient {
 	}
 	public void displayPatientAttributes () {
 		System.out.println("");
-		System.out.println(BloodLevel);
-		System.out.println(HealthLevel);
+		System.out.print(String.format("|%-10s",  "BloodLevel" + BloodLevel));
+		System.out.print(String.format("|%-10s",  "HealthLevel" + HealthLevel));
 		System.out.println("");
+	}
 		
 	}
 	
+	
 
-	}
+	
 
 
 	
