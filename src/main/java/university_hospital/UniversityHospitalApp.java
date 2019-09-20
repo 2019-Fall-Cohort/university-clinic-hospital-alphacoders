@@ -138,8 +138,11 @@ public class UniversityHospitalApp {
 		patient.displayPatientAttributes();
 		System.out.println();
 		int amountBlood = 5;
+		int amountHealth = 5;
 		patient.giveBlood(amountBlood);
+		patient.treatHealth(amountHealth);
 		patient.displayPatientAttributes();
+		
 		
 	
 		
