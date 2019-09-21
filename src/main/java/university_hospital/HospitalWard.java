@@ -55,10 +55,10 @@ public class HospitalWard {
 		for (Employee employee : employeeList.values()) {
 			if (employee instanceof Doctor) {
 				Doctor doctor = (Doctor) employee;
-				arrayRow = (String.format("|%-15s", doctor.getName()))
-						+ (String.format("|%-15s", doctor.getDoctorIdentificationNumber()))
-						+ (String.format("|%-15s", doctor.getDoctorSalary()))
-						+ (String.format("|%-15s|", doctor.getPaid()));
+				arrayRow = (String.format("|%-28s", doctor.getName()))
+						+ (String.format("|%-28s", doctor.getDoctorIdentificationNumber()))
+						+ (String.format("|%-28s", doctor.getDoctorSalary()))
+						+ (String.format("|%-28s|", doctor.getPaid()));
 				System.out.println(arrayRow);
 			}
 		}
@@ -71,10 +71,10 @@ public class HospitalWard {
 		for (Employee employee : employeeList.values()) {
 			if (employee instanceof Janitor) {
 				Janitor janitor = (Janitor) employee;
-				arrayRow = (String.format("|%-15s", janitor.getName()))
-						+ (String.format("|%-15s", janitor.getJanitorIdentificationNumer()))
-						+ (String.format("|%-15s", janitor.getJanitorSalary()))
-						+ (String.format("|%-15s|", janitor.getPaid()));
+				arrayRow = (String.format("|%-28s", janitor.getName()))
+						+ (String.format("|%-28s", janitor.getJanitorIdentificationNumer()))
+						+ (String.format("|%-28s", janitor.getJanitorSalary()))
+						+ (String.format("|%-28s|", janitor.getPaid()));
 				System.out.println(arrayRow);
 			}
 		}
@@ -87,10 +87,10 @@ public class HospitalWard {
 		for (Employee employee : employeeList.values()) {
 			if (employee instanceof Nurse) {
 				Nurse nurse = (Nurse) employee;
-				arrayRow = (String.format("|%-15s", nurse.getName()))
-						+ (String.format("|%-15s", nurse.getNurseIdentificationNumber()))
-						+ (String.format("|%-15s", nurse.getNurseSalary()))
-						+ (String.format("|%-15s|", nurse.getPaid()));
+				arrayRow = (String.format("|%-28s", nurse.getName()))
+						+ (String.format("|%-28s", nurse.getNurseIdentificationNumber()))
+						+ (String.format("|%-28s", nurse.getNurseSalary()))
+						+ (String.format("|%-28s|", nurse.getPaid()));
 				System.out.println(arrayRow);
 			}
 		}
@@ -103,10 +103,10 @@ public class HospitalWard {
 		for (Employee employee : employeeList.values()) {
 			if (employee instanceof Receptionist) {
 				Receptionist receptionist = (Receptionist) employee;
-				arrayRow = (String.format("|%-15s", receptionist.getName()))
-						+ (String.format("|%-15s", receptionist.getReceptionistIdentificationNumer()))
-						+ (String.format("|%-15s", receptionist.getReceptionistSalary()))
-						+ (String.format("|%-15s|", receptionist.getPaid()));
+				arrayRow = (String.format("|%-28s", receptionist.getName()))
+						+ (String.format("|%-28s", receptionist.getReceptionistIdentificationNumer()))
+						+ (String.format("|%-28s", receptionist.getReceptionistSalary()))
+						+ (String.format("|%-28s|", receptionist.getPaid()));
 				System.out.println(arrayRow);
 
 			}

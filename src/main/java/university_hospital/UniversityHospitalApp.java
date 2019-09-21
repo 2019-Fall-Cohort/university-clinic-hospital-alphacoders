@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class UniversityHospitalApp {
 
 	static HospitalWard hospitalWard = new HospitalWard();
-	static Doctor doctor = new Doctor("Dr Bloch");
+	static Doctor doctor = new Doctor("Dr Bloch, Cardiovascular MD");
 	static Janitor janitor = new Janitor("Fred");
-	static Nurse nurse = new Nurse("Jackie");
+	static Nurse nurse = new Nurse("Jackie, BSN");
 	static Receptionist receptionist = new Receptionist("Stacy");
 	static Patient patient = new Patient("");
 	private static Scanner userInput = new Scanner(System.in);
@@ -107,37 +107,37 @@ public class UniversityHospitalApp {
 
 	private static void displayEmployeeAttributes() {
 		System.out.println("Doctors:");
-		System.out.print(String.format("|%-15s", "Name"));
-		System.out.print(String.format("|%-15s", "Identification#"));
-		System.out.print(String.format("|%-15s", "Salary"));
-		System.out.print(String.format("|%-15s|", "PayCheck"));
+		System.out.print(String.format("|%-28s", "Name"));
+		System.out.print(String.format("|%-28s", "Identification#"));
+		System.out.print(String.format("|%-28s", "Salary"));
+		System.out.print(String.format("|%-28s|", "PayCheck"));
 		System.out.println();
 		hospitalWard.retrieveDoctorAttributes();
 		System.out.println();
 
 		System.out.println("Janitors:");
-		System.out.print(String.format("|%-15s", "Name"));
-		System.out.print(String.format("|%-15s", "Identification#"));
-		System.out.print(String.format("|%-15s", "Salary"));
-		System.out.print(String.format("|%-15s|", "PayCheck"));
+		System.out.print(String.format("|%-28s", "Name"));
+		System.out.print(String.format("|%-28s", "Identification#"));
+		System.out.print(String.format("|%-28s", "Salary"));
+		System.out.print(String.format("|%-28s|", "PayCheck"));
 		System.out.println();
 		hospitalWard.retrieveJanitorAttributes();
 		System.out.println();
 
 		System.out.println("Nurse:");
-		System.out.print(String.format("|%-15s", "Name"));
-		System.out.print(String.format("|%-15s", "Identification#"));
-		System.out.print(String.format("|%-15s", "Salary"));
-		System.out.print(String.format("|%-15s|", "PayCheck"));
+		System.out.print(String.format("|%-28s", "Name"));
+		System.out.print(String.format("|%-28s", "Identification#"));
+		System.out.print(String.format("|%-28s", "Salary"));
+		System.out.print(String.format("|%-28s|", "PayCheck"));
 		System.out.println();
 		hospitalWard.retrieveNurseAttributes();
 		System.out.println();
 
 		System.out.println("Receptionist:");
-		System.out.print(String.format("|%-15s", "Name"));
-		System.out.print(String.format("|%-15s", "Identification#"));
-		System.out.print(String.format("|%-15s", "Salary"));
-		System.out.print(String.format("|%-15s|", "PayCheck"));
+		System.out.print(String.format("|%-28s", "Name"));
+		System.out.print(String.format("|%-28s", "Identification#"));
+		System.out.print(String.format("|%-28s", "Salary"));
+		System.out.print(String.format("|%-28s|", "PayCheck"));
 		System.out.println();
 		hospitalWard.retrieveReceptionistAttributes();
 		System.out.println();
