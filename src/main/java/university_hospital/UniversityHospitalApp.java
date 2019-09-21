@@ -1,5 +1,6 @@
 package university_hospital;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class UniversityHospitalApp {
@@ -38,7 +39,8 @@ public class UniversityHospitalApp {
 		System.out.println("3. Display all employee stats.");
 		System.out.println("4. Have Doctor treat patient.");
 		System.out.println("5. Have nurse make rounds on all patients.");
-		System.out.println("6. Type to close application");
+		System.out.println("6. Check if janitor is sweeping.");
+		System.out.println("7. Type to close application");
 	}
 
 	private static void addANewPatient() {
@@ -73,6 +75,9 @@ public class UniversityHospitalApp {
 			interactWithAllPatients();
 			break;
 		case 6:
+			showIfJanitorIsSweeping();
+			break;
+		case 7:
 			stayInMenu = false;
 			System.out.println("Goodbye.");
 			System.exit(0);
@@ -139,31 +144,30 @@ public class UniversityHospitalApp {
 		Patient selectedPatient = hospitalWard.retrievePatient(patientName);
 		userInput.nextLine();
 		System.out.println("");
-		
-		
+
 		stayInMenu = true;
-		while(stayInMenu) {
+		while (stayInMenu) {
 			patient.displayPatientAttributes();
 			System.out.println("");
 			System.out.println("Hit 1 to give blood and 2 to treat patient. (Hit 3 To Exit)");
 			int response = userInput.nextInt();
-			determineUserResponseForTreatingPatient (response, selectedPatient);
+			determineUserResponseForTreatingPatient(response, selectedPatient);
 		}
 
 	}
-	
-	private static void determineUserResponseForTreatingPatient (int response, Patient selectedPatient) {
-		
+
+	private static void determineUserResponseForTreatingPatient(int response, Patient selectedPatient) {
+
 		int amount = 0;
 		switch (response) {
-		case 1 :
+		case 1:
 			System.out.println("How much blood would you like to draw from?");
 			amount = userInput.nextInt();
 			userInput.nextLine();
 			patient.giveBlood(amount);
 			break;
-			
-		case 2 :
+
+		case 2:
 			System.out.println("How much would you like to treat patient?");
 			amount = userInput.nextInt();
 			userInput.nextLine();
@@ -174,18 +178,20 @@ public class UniversityHospitalApp {
 			break;
 		}
 	}
+
 	private static void interactWithAllPatients() {
 		int amount = 0;
 		stayInMenu = true;
-		
-		while(stayInMenu) {
+
+		while (stayInMenu) {
 			displayAllPatientAttributes();
 			hospitalWard.retrieveAllPatientAttributes();
 			System.out.println("");
-			System.out.println("How much would you like the nurst to get blood or treat patient? (Hit 1 to give blood, 2 to treat, and 3 to back out.)");
+			System.out.println(
+					"How much would you like the nurst to get blood or treat patient? (Hit 1 to give blood, 2 to treat, and 3 to back out.)");
 			int response = userInput.nextInt();
 			switch (response) {
-			case 1 :
+			case 1:
 				System.out.println("How much blood would you like the nurse to take?");
 				amount = userInput.nextInt();
 				userInput.nextLine();
@@ -197,11 +203,26 @@ public class UniversityHospitalApp {
 				userInput.nextLine();
 				hospitalWard.allPatientsToTreat(amount);
 				break;
-			case 3: 
+			case 3:
 				stayInMenu = false;
 				break;
 			}
 		}
+	}
+
+	private static void showIfJanitorIsSweeping() {
+		Random number = new Random();
+		int randomNumber;
+
+		for (int counter = 1; counter <= 2; counter++) {
+			randomNumber = 1 + number.nextInt(2);
+			if (randomNumber == 1) {
+				System.out.println("Janitor is sweeping.");
+			} else {
+				System.out.println("Janitor is not sweeping.");
+			}
+		}
+
 	}
 
 }
