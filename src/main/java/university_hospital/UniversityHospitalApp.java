@@ -79,10 +79,10 @@ public class UniversityHospitalApp {
 		case 6:
 			showIfJanitorIsSweeping();
 			break;
-		case 7: 
+		case 7:
 			showIfReceptionistIsOnThePhone();
 			break;
-		
+
 		case 8:
 			stayInMenu = false;
 			System.out.println("Goodbye.");
@@ -220,32 +220,28 @@ public class UniversityHospitalApp {
 		Random number = new Random();
 		final int Max = 2;
 		int random;
-		
-		random = rand.nextInt(Max) + 1;
-		
 
-			if (random == 1) {
-				System.out.println("Janitor is sweeping.");
-			} else {
-				System.out.println("Janitor is not sweeping.");
-			}
+		random = rand.nextInt(Max) + 1;
+
+		if (random == 1) {
+			System.out.println("Janitor is sweeping.");
+		} else {
+			System.out.println("Janitor is not sweeping.");
+		}
 	}
-	
+
 	private static void showIfReceptionistIsOnThePhone() {
 		Random number = new Random();
 		final int Max = 2;
 		int random;
-				
+
 		random = rand.nextInt(Max) + 1;
-				
 
-			if (random == 1) {
-				System.out.println("Receptionist is on the phone.");
-			} else {
-				System.out.println("Receptionist is off the phone.");
-			}
+		if (random == 1) {
+			System.out.println("Receptionist is on the phone.");
+		} else {
+			System.out.println("Receptionist is off the phone.");
 		}
-
 	}
 
-
+}

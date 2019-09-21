@@ -47,6 +47,9 @@ public class HospitalWard {
 	public Collection<Employee> retrieveEmployeeList() {
 		return employeeList.values();
 	}
+	public Employee retrieveEmployee(String employeeName) {
+		return employeeList.get(employeeName);
+	}
 
 	public void retrieveDoctorAttributes() {
 
