@@ -1,7 +1,7 @@
 package university_hospital;
 
 public class Receptionist extends Employee {
-	
+
 	private int salary;
 	private int identificationNumber;
 
@@ -9,17 +9,17 @@ public class Receptionist extends Employee {
 		super(name);
 		setReceptionistSalary(45000);
 		setReceptionistIdentificationNumber(777);
-		
+
 	}
 
 	public void setReceptionistIdentificationNumber(int identificationNumber) {
 		this.identificationNumber = identificationNumber;
-		
+
 	}
 
 	public void setReceptionistSalary(int salary) {
 		this.salary = salary;
-		
+
 	}
 
 	public int getReceptionistSalary() {
@@ -29,6 +29,5 @@ public class Receptionist extends Employee {
 	public int getReceptionistIdentificationNumer() {
 		return identificationNumber;
 	}
-
 
 }

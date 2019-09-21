@@ -11,6 +11,7 @@ public class UniversityHospitalApp {
 	static Nurse nurse = new Nurse("Jackie, BSN");
 	static Receptionist receptionist = new Receptionist("Stacy");
 	static Patient patient = new Patient("");
+	static Employee employee = new Employee("");
 	private static Scanner userInput = new Scanner(System.in);
 	private static String name;
 	static boolean stayInMenu = true;
@@ -42,7 +43,8 @@ public class UniversityHospitalApp {
 		System.out.println("5. Have nurse make rounds on all patients.");
 		System.out.println("6. Check if janitor is sweeping.");
 		System.out.println("7. Show if Receptionist is on the phone.");
-		System.out.println("8. Type to close application");
+		System.out.println("8. Pay a specific Employee.");
+		System.out.println("9. Type to close application");
 	}
 
 	private static void addANewPatient() {
@@ -82,8 +84,11 @@ public class UniversityHospitalApp {
 		case 7:
 			showIfReceptionistIsOnThePhone();
 			break;
-
 		case 8:
+			payEmployee();
+			break;
+
+		case 9:
 			stayInMenu = false;
 			System.out.println("Goodbye.");
 			System.exit(0);
@@ -241,6 +246,17 @@ public class UniversityHospitalApp {
 			System.out.println("Receptionist is on the phone.");
 		} else {
 			System.out.println("Receptionist is off the phone.");
+		}
+	}
+	private static void payEmployee () {
+		System.out.println("Pick an employee to get paid.");
+		String userSelection2 = userInput.nextLine();
+		userInput.nextLine();
+		
+		if (userSelection2 == "Dr Bloch, Cardiovascular MD"); {
+		int userSelection = 0;
+		employee.getPaid();
+		displayEmployeeAttributes();
 		}
 	}
 

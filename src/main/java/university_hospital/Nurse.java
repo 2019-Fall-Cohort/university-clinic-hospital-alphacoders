@@ -28,5 +28,5 @@ public class Nurse extends Employee {
 	public void setNurseIdentificationNumber(int identificationNumber) {
 		this.identificationNumber = identificationNumber;
 	}
-	
+
 }

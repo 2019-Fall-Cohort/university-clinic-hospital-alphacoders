@@ -47,6 +47,7 @@ public class HospitalWard {
 	public Collection<Employee> retrieveEmployeeList() {
 		return employeeList.values();
 	}
+
 	public Employee retrieveEmployee(String employeeName) {
 		return employeeList.get(employeeName);
 	}
@@ -116,15 +117,16 @@ public class HospitalWard {
 		}
 	}
 
-	public void allPatientsGiveBlood (int amountBloodLevel) {
+	public void allPatientsGiveBlood(int amountBloodLevel) {
 		for (Patient patient : patientList.values()) {
 			patient.giveBlood(amountBloodLevel);
 		}
 	}
-	public void allPatientsToTreat (int amountTreated) {
+
+	public void allPatientsToTreat(int amountTreated) {
 		for (Patient patient : patientList.values()) {
 			patient.treatHealth(amountTreated);
 		}
 	}
-	
+
 }
