@@ -40,8 +40,8 @@ public class Patient {
 		System.out.println("");
 	}
 
-	public void giveBlood(int amountBlood) {
-		int newBloodLevel = BloodLevel - amountBlood;
+	public void giveBlood(int amount) {
+		int newBloodLevel = BloodLevel - amount;
 		
 		if (attributeWithinRange(newBloodLevel)) {
 			setBloodLevel(newBloodLevel);
@@ -73,8 +73,8 @@ public class Patient {
 		return isWithinRange;
 	}
 
-	public void treatHealth(int amountHealth) {
-		int newHealthLevel = HealthLevel + amountHealth;
+	public void treatHealth(int amount) {
+		int newHealthLevel = HealthLevel + amount;
 		
 		if (attributeWithinRange(newHealthLevel)) {
 			setHealthLevel(newHealthLevel);

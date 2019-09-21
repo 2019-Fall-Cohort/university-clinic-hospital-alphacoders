@@ -108,13 +108,20 @@ public class HospitalWard {
 						+ (String.format("|%-15s", receptionist.getReceptionistSalary()))
 						+ (String.format("|%-15s|", receptionist.getPaid()));
 				System.out.println(arrayRow);
-				
+
 			}
 		}
 	}
 
-	public void displayPatientAttributes() {
-		
-		
+	public void allPatientsGiveBlood (int amountBloodLevel) {
+		for (Patient patient : patientList.values()) {
+			patient.giveBlood(amountBloodLevel);
+		}
 	}
+	public void allPatientsToTreat (int amountTreated) {
+		for (Patient patient : patientList.values()) {
+			patient.treatHealth(amountTreated);
+		}
+	}
+	
 }
