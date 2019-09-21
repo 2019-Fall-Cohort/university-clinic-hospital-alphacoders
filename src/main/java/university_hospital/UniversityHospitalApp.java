@@ -14,6 +14,7 @@ public class UniversityHospitalApp {
 	private static Scanner userInput = new Scanner(System.in);
 	private static String name;
 	static boolean stayInMenu = true;
+	static Random rand = new Random();
 
 	public static void main(String[] args) {
 
@@ -212,11 +213,13 @@ public class UniversityHospitalApp {
 
 	private static void showIfJanitorIsSweeping() {
 		Random number = new Random();
-		int randomNumber;
+		final int Max = 2;
+		int random;
+		
+		random = rand.nextInt(Max) + 1;
+		
 
-		for (int counter = 1; counter <= 2; counter++) {
-			randomNumber = 1 + number.nextInt(2);
-			if (randomNumber == 1) {
+			if (random == 1) {
 				System.out.println("Janitor is sweeping.");
 			} else {
 				System.out.println("Janitor is not sweeping.");
@@ -225,4 +228,4 @@ public class UniversityHospitalApp {
 
 	}
 
-}
+
