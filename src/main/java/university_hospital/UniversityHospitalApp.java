@@ -252,11 +252,18 @@ public class UniversityHospitalApp {
 		System.out.println("Pick an employee to get paid.");
 		String userSelection2 = userInput.nextLine();
 		userInput.nextLine();
-		
-		if (userSelection2 == "Dr Bloch, Cardiovascular MD"); {
-		int userSelection = 0;
-		employee.getPaid();
+		if (userSelection2 == "Dr Bloch"); {
+		employee.getPaid();		
 		displayEmployeeAttributes();
+		} if (userSelection2 == "Jackie"); {
+			employee.getPaid();		
+			displayEmployeeAttributes();
+		} if (userSelection2 == "Fred"); {
+			employee.getPaid();		
+			displayEmployeeAttributes();
+		} if (userSelection2 == "Stacy"); {
+			employee.getPaid();		
+			displayEmployeeAttributes();
 		}
 	}
 

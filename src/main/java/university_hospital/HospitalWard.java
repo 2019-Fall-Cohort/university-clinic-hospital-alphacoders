@@ -111,6 +111,7 @@ public class HospitalWard {
 						+ (String.format("|%-28s", receptionist.getReceptionistIdentificationNumer()))
 						+ (String.format("|%-28s", receptionist.getReceptionistSalary()))
 						+ (String.format("|%-28s|", receptionist.getPaid()));
+						
 				System.out.println(arrayRow);
 
 			}
